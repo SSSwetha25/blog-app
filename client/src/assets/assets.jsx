@@ -6,3 +6,5 @@ export const assets={
     arrow,
     gradientbg
 }
+
+export const blogCategories=['All','Technology','Startup','Lifestyle','Finance']
