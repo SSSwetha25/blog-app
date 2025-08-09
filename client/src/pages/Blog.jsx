@@ -24,7 +24,7 @@ const Blog = () => {
       <div 
       // className='backdrop-blur-sm bg-white/80 rounded-xl shadow-md p-8 mx-auto max-w-2xl mt-12'
       >
-
+        <p>Published on 1 Jan 2025</p>
       </div>
       <div></div>
 
