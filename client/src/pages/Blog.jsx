@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 
 import { blog_data } from '../assets/assets'
 import Navbar from '../components/Navbar'
+import Moment from 'moment'
 
 const Blog = () => {
   const {id}=useParams()
@@ -21,10 +22,13 @@ const Blog = () => {
   return data ? (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white">
 <Navbar />
-      <div 
-      // className='backdrop-blur-sm bg-white/80 rounded-xl shadow-md p-8 mx-auto max-w-2xl mt-12'
+      <div  className='text-center mt-20 text-gray-600'
+     
       >
-        <p>Published on 1 Jan 2025</p>
+        <p className='text-primary py-4 font-medium'>Published on {Moment(data.createdAt).format('MMMM Do YYYY')}</p>
+        <h1 className='text-2xl sm:text-5xl font-semibold max-w-2xl mx-auto text-gray-800'>{data.title}</h1>
+        <h2 className='my-5 max-w-lg truncate mx-auto'>{data.subtitle}</h2>
+        <p className='inline-block py-1 px-4 rounded-full mb-6 border text-sm border-primary/35 bg-primary/5 font-medium text-primary'>Alison Swift</p>
       </div>
       <div></div>
 
