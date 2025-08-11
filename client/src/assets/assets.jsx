@@ -2,6 +2,7 @@ import blog from './blog.png'
 import arrow from './arrow.png'
 import gradientbg from './gradientbg.jpg'
 import star_icon from './star_icon.png'
+import futureOfAi from './future_of_ai.jpg'
 
 export const assets={
     blog,
@@ -15,9 +16,35 @@ export const blog_data = [
     _id: "66a4f8e7c1d3f1a9e7b2c0d1",
     title: "The Future of AI in Everyday Life",
     subtitle: "How artificial intelligence is shaping our daily experiences",
-    description: "Explore how artificial intelligence is rapidly integrating into our daily routines, from smart homes to personalized recommendations, and what to expect next in this exciting field. This post delves into practical applications and ethical considerations.",
+    description: `<h2>Introduction</h2>
+      <p>Artificial Intelligence (AI) is no longer a concept confined to science fiction. It has steadily made its way into our everyday lives, influencing how we work, learn, communicate, and even relax.</p>
+      
+      <h2>AI at Home</h2>
+      <p>Smart home assistants like Alexa, Google Assistant, and Siri are becoming household staples. They help control lighting, manage shopping lists, and even monitor home security.</p>
+      
+      <h3>Examples:</h3>
+      <ul>
+        <li>Automated thermostats that adjust based on your routine</li>
+        <li>Voice-controlled appliances</li>
+        <li>AI-powered cleaning robots</li>
+      </ul>
+      
+      <h2>AI in Transportation</h2>
+      <p>Self-driving car technology is advancing rapidly, aiming to make transportation safer and more efficient. Ride-hailing services are also exploring AI for route optimization and dynamic pricing.</p>
+      
+      <h2>Personalized Recommendations</h2>
+      <p>From Netflix suggesting your next binge-watch to Spotify curating a playlist, AI analyzes your habits and tailors content to match your preferences.</p>
+      
+      <h2>Ethical Considerations</h2>
+      <p>While AI offers convenience, it raises questions about privacy, job automation, and decision-making biases. Striking a balance between innovation and responsibility is crucial.</p>
+      
+      <blockquote>“The best way to predict the future is to invent it.” – Alan Kay</blockquote>
+      
+      <h2>Conclusion</h2>
+      <p>AI is no longer the future — it is the present. Understanding its capabilities and limitations will help us use it wisely in shaping a better tomorrow.</p>
+   `,
     category: "Technology",
-    image: "/",
+    image: futureOfAi,
     createdAt: "2025-08-10T10:00:00.000Z",
     updatedAt: "2025-08-10T10:00:00.000Z",
     isPublished: true

@@ -1,28 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import "tailwindcss";
-
-*{
-  font-family: "Outfit", sans-serif;
-}
-
-::-webkit-scrollbar{
-  display: none;
-}
-
+/* Rich text styles for blog content
+   File: rich-text-css.txt
+   Usage: import or paste into your global CSS, or scope under a container like .rich-text
+*/
 :root{
-  --rt-font-sans: 'Outfit', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --rt-font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   --rt-font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-  --rt-muted: #6b7280;
-  --rt-border: #e6e6ef;
-  --rt-accent: #7c3aed;
-  --rt-accent-2: #f3e8ff;
+  --rt-muted: #6b7280; /* gray-500 */
+  --rt-border: #e6e6ef; /* soft border */
+  --rt-accent: #7c3aed; /* purple-600 */
+  --rt-accent-2: #f3e8ff; /* purple-50 */
   --rt-bg: #ffffff;
   --rt-radius: 8px;
 }
 
 .rich-text{
   font-family: var(--rt-font-sans);
-  color: #0f172a;
+  color: #0f172a; /* slate-900 */
   line-height: 1.65;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
@@ -37,7 +30,7 @@
 
 .rich-text p.lead{
   font-size: 1.125rem;
-  color: #334155;
+  color: #334155; /* slate-700 */
   margin-bottom: 1.35rem;
 }
 
@@ -58,6 +51,7 @@
 .rich-text h2{ font-size: 1.5rem; }
 .rich-text h3{ font-size: 1.25rem; }
 
+/* Subtitles / metadata */
 .rich-text .subtitle{
   display:block;
   color: var(--rt-muted);
@@ -65,6 +59,7 @@
   font-size: 0.95rem;
 }
 
+/* Links */
 .rich-text a{
   color: var(--rt-accent);
   text-decoration: underline;
@@ -72,10 +67,12 @@
 }
 .rich-text a:hover{ text-decoration-thickness: 2px; }
 
+/* Images & figures */
 .rich-text img{ max-width: 100%; height: auto; display: block; margin: 1rem 0; border-radius: 6px; }
 .rich-text figure{ margin: 1.25rem 0; }
 .rich-text figcaption{ font-size: 0.875rem; color: var(--rt-muted); margin-top: 0.5rem; }
 
+/* Blockquote */
 .rich-text blockquote{
   border-left: 4px solid var(--rt-accent-2);
   background: linear-gradient(90deg, rgba(124,58,237,0.03), transparent);
@@ -83,42 +80,52 @@
 }
 .rich-text blockquote p{ margin: 0; font-style: italic; }
 
+/* Lists */
 .rich-text ul, .rich-text ol{
   margin: 0 0 1rem 1.25rem; padding: 0.25rem 0;
 }
 .rich-text li{ margin: 0.4rem 0; }
 
+/* Code blocks and inline code */
 .rich-text pre{
   background: #0f172a; color: #f8fafc; padding: 1rem; border-radius: var(--rt-radius); overflow: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace; font-size: 0.9rem;
 }
 .rich-text code{ background: #f3f4f6; padding: 0.15rem 0.35rem; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; font-size: 0.92rem; }
 
+/* Tables */
 .rich-text table{ width: 100%; border-collapse: collapse; margin: 1rem 0; }
 .rich-text th, .rich-text td{ border: 1px solid var(--rt-border); padding: 0.6rem 0.75rem; text-align: left; }
 .rich-text th{ background: #fbfafc; font-weight: 600; }
 
+/* Buttons inside content */
 .rich-text .btn-inline{
   display: inline-block; padding: 0.45rem 0.7rem; border-radius: 999px; border: 1px solid transparent; background: linear-gradient(90deg,var(--rt-accent),#9f7aea); color: white; text-decoration: none; font-size: 0.95rem;
 }
 
+/* Pull quote */
 .rich-text .pull-quote{
   font-size: 1.05rem; font-weight: 600; color: #111827; margin: 1rem 0; padding: 0.6rem 1rem; border-radius: 6px; background: rgba(124,58,237,0.04);
 }
 
+/* Small utilities */
 .rich-text .muted{ color: var(--rt-muted); font-size: 0.9rem; }
 .rich-text .caption{ font-size: 0.875rem; color: var(--rt-muted); }
 
+/* Responsive tweaks */
 @media (min-width: 768px){
   .rich-text{ font-size: 1.03rem; }
   .rich-text h1{ font-size: 2.6rem; }
   .rich-text h2{ font-size: 1.75rem; }
 }
 
+/* Optional: drop cap for first paragraph */
 .rich-text p:first-of-type{ text-indent: 0; }
 .rich-text p.dropcap:first-letter{ float: left; font-size: 3.2rem; line-height: 0.8; padding-right: 0.12rem; padding-top: 0.06rem; font-weight: 700; color: var(--rt-accent); }
 
+/* Accessibility */
 .rich-text a:focus, .rich-text .btn-inline:focus{ outline: 3px solid rgba(124,58,237,0.18); outline-offset: 2px; }
 
+/* Dark mode support (optional when toggling a .dark class on body) */
 .dark .rich-text{
   color: #e6eef8; background: transparent;
 }
