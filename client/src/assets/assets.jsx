@@ -167,3 +167,36 @@ export const footer_data=[
     links:["Instagram","Twitter", "Facebook", "YouTube"]
   }
 ]
+
+export const comments_data = [
+  {
+    _id: "66a5f8e7c1d3f1a9e7b2c0d2",
+    blog: blog_data[0],
+    name: "Michael Scott",
+    content: "This is a comment. Absolutely love how you explained AI’s future!",
+    isApproved: false,
+    createdAt: "2025-08-11T09:15:00.000Z",
+    updatedAt: "2025-08-11T09:15:00.000Z",
+    __v: 0
+  },
+  {
+    _id: "66a5f8e7c1d3f1a9e7b2c0d3",
+    blog: blog_data[0],
+    name: "Pam Beesly",
+    content: "Interesting read. I’m curious about the ethical concerns you mentioned.",
+    isApproved: true,
+    createdAt: "2025-08-11T09:20:00.000Z",
+    updatedAt: "2025-08-11T09:25:00.000Z",
+    __v: 0
+  },
+  {
+    _id: "66a5f8e7c1d3f1a9e7b2c0d4",
+    blog: blog_data[0],
+    name: "Jim Halpert",
+    content: "Great article, well-structured and easy to follow.",
+    isApproved: true,
+    createdAt: "2025-08-11T09:30:00.000Z",
+    updatedAt: "2025-08-11T09:30:00.000Z",
+    __v: 0
+  }
+];
