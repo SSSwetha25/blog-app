@@ -8,7 +8,9 @@
 ::-webkit-scrollbar{
   display: none;
 }
-
+@theme{
+  --color-primary:#5044E5;
+}
 :root{
   --rt-font-sans: 'Outfit', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   --rt-font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
