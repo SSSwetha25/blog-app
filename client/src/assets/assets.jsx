@@ -3,6 +3,9 @@ import arrow from './arrow.png'
 import gradientbg from './gradientbg.jpg'
 import star_icon from './star_icon.png'
 import futureOfAi from './future_of_ai.jpg'
+import habits from './habits.jpeg'
+import investing from './investing.jpg'
+import techstartup from './techstartup.jpg'
 
 export const assets={
     blog,
@@ -55,7 +58,7 @@ export const blog_data = [
     subtitle: "Launching without venture capital",
     description: "A comprehensive guide to launching a tech startup with minimal external funding. Learn about validating your idea, building an MVP, and acquiring early customers without venture capital.",
     category: "Startup",
-    image: "/",
+    image: techstartup,
     createdAt: "2025-08-05T14:30:00.000Z",
     updatedAt: "2025-08-07T09:15:00.000Z",
     isPublished: true
@@ -66,7 +69,7 @@ export const blog_data = [
     subtitle: "Daily mindfulness practices for stress-free living",
     description: "Discover practical strategies for incorporating mindfulness into your daily routine. This article provides easy habits to reduce stress, improve focus, and cultivate a more fulfilling life.",
     category: "Lifestyle",
-    image: "/",
+    image: habits,
     createdAt: "2025-07-28T08:20:00.000Z",
     updatedAt: "2025-08-01T16:00:00.000Z",
     isPublished: true
@@ -77,7 +80,7 @@ export const blog_data = [
     subtitle: "A simple guide to getting started with investments",
     description: "Start your journey to financial independence with this easy-to-understand guide to investing. Learn about stocks, bonds, mutual funds, and how to build a diversified portfolio.",
     category: "Finance",
-    image: "/",
+    image: investing,
     createdAt: "2025-07-15T11:45:00.000Z",
     updatedAt: "2025-07-20T15:10:00.000Z",
     isPublished: true
